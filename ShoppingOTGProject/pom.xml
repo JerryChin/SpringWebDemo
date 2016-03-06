@@ -5,7 +5,7 @@
 	<artifactId>ShoppingOTG</artifactId>
 	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>MavenTestWebProject Maven Webapp</name>
+	<name>ShoppingOTG Web Application</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -46,6 +46,12 @@
 			<version>${servlet.version}</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		
 	</dependencies>
 	<build>
 		<finalName>ShoppingOTG</finalName>

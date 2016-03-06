@@ -22,7 +22,7 @@ public class RootConfig {
 	@Bean
 	public	MessageSource messageSource() {
 		ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
-		messageSource.setBasenames("classpath:messages");
+		messageSource.setBasenames("WEB-INF/locale/messages");
 		return messageSource;
 	}
 }

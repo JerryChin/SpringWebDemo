@@ -2,14 +2,17 @@ package com.jerrychin.controller;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.springframework.ui.ModelMap;
 
 import com.jerrychin.controller.HelloController;
 
-public class HelloControllerTests {
+public class HelloControllerTest {
 	
 	@Test
 	public void welcomeTest() {
 		HelloController hello = new HelloController();
-		Assert.assertNotNull(hello.welcome(null));
+		ModelMap model = new ModelMap();
+		hello.welcome(model);
+		Assert.assertNotNull(model.get("items"));
 	}
 }
